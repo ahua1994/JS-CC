@@ -1,0 +1,39 @@
+.grid {
+    display: grid;  
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    grid-auto-rows: minmax(275px, auto);
+    grid-auto-columns: minmax(300px, auto);
+    font-family: sans-serif;
+    padding: 1.5rem;
+    margin: auto;
+    width: 1400px; 
+}
+
+.grid div {
+    background-color: #306ace;
+    font-size: 1.8rem;
+    color: white;
+    padding: 1.5rem;
+}
+
+.header {
+    grid-column: 1/5;
+}
+
+.box {
+    grid-row: 2/4;
+}
+
+.sidebar {
+    grid-row: 2/7;
+}
+
+.main {
+    grid-column: 1/4;
+    grid-row: 4/7;
+}
+
+.footer {
+    grid-column: 1/5;
+}
